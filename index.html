@@ -2,12 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/calculator.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
   </head>
   <body>
-    <div id="app">Hello</div>
+    <div id="app">
+      <div class="calculator">
+        <div class="calculator-top">
+          <h1 class="calculator-top__header">Calc</h1>
+        </div>
+        <div class="calculator-display">
+          <span class="calculator-display__result">400.5</span>
+        </div>
+        <div class="calculator-btns">
+          <div class="calculator-btns__operations">
+            <button class="calculator-btns__btn calculator-btns__btn-operations">8</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">9</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">7</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">DEL</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">4</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">5</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">6</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">+</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">1</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">2</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">3</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">-</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">.</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">0</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">/</button>
+            <button class="calculator-btns__btn calculator-btns__btn-operations">x</button>
+          </div>
+          <div class="calculator-btns__resume">
+            <button class="calculator-btns__btn calculator-btns__resume-reset">RESET</button>
+            <button class="calculator-btns__btn calculator-btns__resume-result">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

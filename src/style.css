@@ -1,8 +1,114 @@
 @import "styles/reset.css";
 @import "styles/variables.css";
+@import "styles/animations.css";
 
 #app {
-    background-color: var(--maib-bg-color);
+    background-color: var(--main-bg-color);
     min-height: 100vh;
     color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.calculator {
+    min-height: 500px;
+    width: 400px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    background-color: var(--secondary-bg-color);
+}
+
+.calculator-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calculator-top__header {
+    font-size: 25px;
+    color: var(--secondary-text-color);
+}
+
+.calculator-top__theme {
+    color: var(--secondary-text-color);
+}
+
+.calculator-display {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100px;
+    width: 95%;
+    padding: 10px;
+    background-color: var(--main-dark-color);
+    border-radius: var(--border-radius);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.calculator-display__result {
+    color: var(--secondary-text-color);
+}
+
+.calculator-btns {
+    background-color: var(--main-dark-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.calculator-btns__operations {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.calculator-btns__btn {
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    transition: transform 0.2s;
+    border-radius: var(--border-radius);
+}
+
+.calculator-btns__btn-operations {
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--main-light-color);
+}
+
+.calculator-btns__btn:hover {
+    transform: translateY(-2px);
+}
+
+.calculator-btns__btn:active {
+    animation: press 0.2s ease-out;
+}
+
+.calculator-btns__resume {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculator-btns__resume-reset {
+    min-height: 60px;
+    width: 45%;
+    background-color: var(--main-color);
+}
+
+.calculator-btns__resume-result {
+    min-height: 60px;
+    width: 45%;
+    background-color: var(--accent-color);
 }

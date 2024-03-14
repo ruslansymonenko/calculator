@@ -29,6 +29,7 @@ figcaption,
 blockquote,
 dl,
 dd {
+    font-size: inherit;
     margin: 0;
 }
 
@@ -46,6 +47,7 @@ button,
 textarea,
 select {
     font: inherit;
+    border: none;
 }
 a {
     text-decoration: none;

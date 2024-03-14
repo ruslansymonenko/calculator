@@ -1,5 +1,17 @@
 :root {
-    --maib-bg-color: #3B4664;
+    /* Colors */
+    --main-bg-color: #E9E3DC;
+    --secondary-bg-color: #3B4664;
+
+    --main-color: #647296;
+    --main-dark-color: #191F32;
+    --secondary-color: #EBE3DD;
+    --main-light-color: #E9E3DC;
+    --accent-color: #D13F30;
 
     --main-text-color: #191F32;
+    --secondary-text-color: #F1F3F7;
+
+    --border-radius: 10px;
+    --shadow: 1px 1px 6px -1px;
 }

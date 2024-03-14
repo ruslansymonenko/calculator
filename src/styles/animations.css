@@ -1,0 +1,11 @@
+@keyframes press {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1px); /* Slightly move the button down at the midpoint */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
