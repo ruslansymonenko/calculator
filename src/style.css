@@ -1,0 +1,8 @@
+@import "styles/reset.css";
+@import "styles/variables.css";
+
+#app {
+    background-color: var(--maib-bg-color);
+    min-height: 100vh;
+    color: var(--main-text-color);
+}
