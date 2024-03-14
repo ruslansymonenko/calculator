@@ -3,9 +3,25 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(1px); /* Slightly move the button down at the midpoint */
+        transform: translateY(1px);
     }
     100% {
         transform: translateY(0);
     }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease forwards;
 }
